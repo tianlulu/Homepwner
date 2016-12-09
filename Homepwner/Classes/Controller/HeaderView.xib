@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BNRItemsTableViewController">
+            <connections>
+                <outlet property="headerView" destination="iN0-l3-epB" id="rFr-cU-fXC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BML-0u-2Vn">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYI-gx-CSM">
+                            <rect key="frame" x="60" y="10" width="30" height="30"/>
+                            <state key="normal" title="Edit">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="toggleEditingMode:" destination="-1" eventType="touchUpInside" id="3S7-ge-Elp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAS-2a-aqp">
+                            <rect key="frame" x="200" y="12" width="31" height="30"/>
+                            <state key="normal" title="New">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addNewItem:" destination="-1" eventType="touchUpInside" id="Z1x-gt-AjQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.37496316600000001" green="1" blue="0.34798639450000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="GYI-gx-CSM" firstAttribute="top" secondItem="BML-0u-2Vn" secondAttribute="top" constant="10" id="0e0-oG-qub"/>
+                        <constraint firstItem="PAS-2a-aqp" firstAttribute="top" secondItem="BML-0u-2Vn" secondAttribute="top" constant="12" id="1fW-xB-eAZ"/>
+                        <constraint firstItem="GYI-gx-CSM" firstAttribute="leading" secondItem="BML-0u-2Vn" secondAttribute="leading" constant="60" id="aSW-sj-fpU"/>
+                        <constraint firstItem="PAS-2a-aqp" firstAttribute="top" secondItem="GYI-gx-CSM" secondAttribute="top" constant="2" id="oPP-uG-Le1"/>
+                        <constraint firstAttribute="trailing" secondItem="PAS-2a-aqp" secondAttribute="trailing" constant="69" id="pYf-Ym-xJb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BML-0u-2Vn" secondAttribute="bottom" id="QR3-eV-0Pf"/>
+                <constraint firstItem="BML-0u-2Vn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ucd-Kt-bdi"/>
+                <constraint firstItem="BML-0u-2Vn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eMV-ww-ld9"/>
+                <constraint firstAttribute="trailing" secondItem="BML-0u-2Vn" secondAttribute="trailing" id="por-Oq-J17"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-33" y="-203"/>
+        </view>
+    </objects>
+</document>
