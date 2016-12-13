@@ -8,6 +8,8 @@
 
 #import "TLItemStore.h"
 #import "TLItem.h"
+#import "TLImageStore.h"
+
 
 @interface TLItemStore()
 @property (nonatomic) NSMutableArray *privateItems;
@@ -48,6 +50,8 @@
 }
 
 - (void)removeItem:(TLItem *)item {
+    //在用户删除某个TLItem对象后，需要同时在TLImageStore删除对应的UIImage对象
+    [[TLImageStore sharedStore] deleteImageForKey:item.itemKey];
     [self.privateItems removeObjectIdenticalTo:item];
 }
 

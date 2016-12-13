@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F153EB5F1DFE3E9300A72327 /* TLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F153EB5D1DFE3E9300A72327 /* TLDetailViewController.m */; };
+		F153EB601DFE3E9300A72327 /* TLDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F153EB5E1DFE3E9300A72327 /* TLDetailViewController.xib */; };
+		F153EB631DFE872200A72327 /* TLImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F153EB621DFE872200A72327 /* TLImageStore.m */; };
 		F1F38DDA1DFA4D4E00B44D98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F38DD91DFA4D4E00B44D98 /* main.m */; };
 		F1F38DE51DFA4D4E00B44D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F38DE41DFA4D4E00B44D98 /* Assets.xcassets */; };
 		F1F38DE81DFA4D4E00B44D98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F38DE61DFA4D4E00B44D98 /* LaunchScreen.storyboard */; };
@@ -37,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F153EB5C1DFE3E9300A72327 /* TLDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLDetailViewController.h; sourceTree = "<group>"; };
+		F153EB5D1DFE3E9300A72327 /* TLDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLDetailViewController.m; sourceTree = "<group>"; };
+		F153EB5E1DFE3E9300A72327 /* TLDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TLDetailViewController.xib; sourceTree = "<group>"; };
+		F153EB611DFE872200A72327 /* TLImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLImageStore.h; sourceTree = "<group>"; };
+		F153EB621DFE872200A72327 /* TLImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLImageStore.m; sourceTree = "<group>"; };
 		F1F38DD51DFA4D4E00B44D98 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F38DD91DFA4D4E00B44D98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1F38DE41DFA4D4E00B44D98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,6 +168,9 @@
 				F1F38E121DFA522C00B44D98 /* TLItemsTableViewController.h */,
 				F1F38E131DFA522C00B44D98 /* TLItemsTableViewController.m */,
 				F1F38E1E1DFA9F1500B44D98 /* HeaderView.xib */,
+				F153EB5C1DFE3E9300A72327 /* TLDetailViewController.h */,
+				F153EB5D1DFE3E9300A72327 /* TLDetailViewController.m */,
+				F153EB5E1DFE3E9300A72327 /* TLDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -169,6 +180,8 @@
 			children = (
 				F1F38E181DFA557600B44D98 /* TLItemStore.h */,
 				F1F38E191DFA557600B44D98 /* TLItemStore.m */,
+				F153EB611DFE872200A72327 /* TLImageStore.h */,
+				F153EB621DFE872200A72327 /* TLImageStore.m */,
 				F1F38E1B1DFA587A00B44D98 /* TLItem.h */,
 				F1F38E1C1DFA587A00B44D98 /* TLItem.m */,
 			);
@@ -289,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F38E1F1DFA9F1500B44D98 /* HeaderView.xib in Resources */,
+				F153EB601DFE3E9300A72327 /* TLDetailViewController.xib in Resources */,
 				F1F38DE81DFA4D4E00B44D98 /* LaunchScreen.storyboard in Resources */,
 				F1F38DE51DFA4D4E00B44D98 /* Assets.xcassets in Resources */,
 			);
@@ -316,8 +330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F38E171DFA522C00B44D98 /* TLItemsTableViewController.m in Sources */,
+				F153EB5F1DFE3E9300A72327 /* TLDetailViewController.m in Sources */,
 				F1F38E161DFA522C00B44D98 /* AppDelegate.m in Sources */,
 				F1F38DDA1DFA4D4E00B44D98 /* main.m in Sources */,
+				F153EB631DFE872200A72327 /* TLImageStore.m in Sources */,
 				F1F38E1A1DFA557600B44D98 /* TLItemStore.m in Sources */,
 				F1F38E1D1DFA587A00B44D98 /* TLItem.m in Sources */,
 			);
@@ -541,6 +557,7 @@
 				F1F38E041DFA4D4E00B44D98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1F38E051DFA4D4E00B44D98 /* Build configuration list for PBXNativeTarget "HomepwnerTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +566,7 @@
 				F1F38E071DFA4D4E00B44D98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1F38E081DFA4D4E00B44D98 /* Build configuration list for PBXNativeTarget "HomepwnerUITests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +575,7 @@
 				F1F38E0A1DFA4D4E00B44D98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

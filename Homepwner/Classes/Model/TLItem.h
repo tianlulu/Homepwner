@@ -13,6 +13,7 @@
 @property (nonatomic,copy) NSString *serialNumber;
 @property (assign) int valueInDollars;
 @property (nonatomic,strong) NSDate *dateCreated;
+@property (nonatomic,copy) NSString *itemKey;
 
 - (instancetype)initWithItemName:(NSString *)name valueInDollars:(int)value serialNumber:(NSString *)serialNumber;
 + (TLItem *)randomItem;
